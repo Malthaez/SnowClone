@@ -2,16 +2,16 @@
 
 class Position
 {
-    float x;
-    float y;
-    float z;
+    float _x;
+    float _y;
+    float _z;
 }
 
 class Rotation
 {
-    float x;
-    float y;
-    float z;
+    float _x;
+    float _y;
+    float _z;
 }
 
 class Transform
@@ -45,14 +45,22 @@ class Weapon
 
 class HeroModel
 {
+    float _moveSpeed;
     Ability _primaryAbility;
     Ability _secondaryAbility;
     Ability _ultimateAbility;
     Weapon _weapon;
 }
 
+class GamePad
+{
+    float[] _axisInputs;
+    bool[] _buttonInputs;
+}
+
 class Player
 {
+    GamePad _gamePad;
     Transform _transform;
     bool _isAlive;
     HeroModel _hero;
@@ -72,7 +80,7 @@ class Timer
 {
     float _time;
 
-    void StartTimer();
+    void Start();
 }
 
 class Game
