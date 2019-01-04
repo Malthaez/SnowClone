@@ -3,21 +3,21 @@
 class Position
 {
     float x;
-float y;
-float z;
+    float y;
+    float z;
 }
 
 class Rotation
 {
     float x;
-float y;
-float z;
+    float y;
+    float z;
 }
 
 class Transform
 {
     Position _position;
-Rotation _rotation;
+    Rotation _rotation;
 }
 
 abstract class Ability
